@@ -70,7 +70,7 @@ def get_fanbu(token, __NS_sig4):
             "Sec-Fetch-Site": "same-origin",
             "Sec-Fetch-Mode": "cors",
             "Sec-Fetch-Dest": "empty",
-            "Referer": "https://encourage.kuaishou.com/activity/dish?layoutType=4&encourageEventTracking=W3siZW5jb3VyYWdlX3Rhc2tfaWQiOjIwMDA4LCJlbmNvdXJhZ2VfcmVzb3VyY2VfaWQiOiJlYXJuUGFnZV90YXNrTGlzdF8xNyIsImV2ZW50VHJhY2tpbmdMb2dJbmZvIjpbeyJldmVudFRyYWNraW5nVGFza0lkIjoyMDAwOCwicmVzb3VyY2VJZCI6ImVhcm5QYWdlX3Rhc2tMaXN0XzE3IiwiZXh0UGFyYW1zIjp7fX1dfV0",
+            "Referer": "https://encourage.kuaishou.com/activity/dish?layoutType=4&encourageTaskValidityTrack=eyJhY3Rpdml0eV9pZCI6MjAwMDgsInJlc291cmNlX2lkIjoiZWFyblBhZ2VfdGFza0xpc3RfMyIsImV4dF9wYXJhbXMiOnsiaXNTZXJ2ZXJSZWNvcmRDbGlja0FjdGlvbiI6dHJ1ZX19&encourageEventTracking=W3siZW5jb3VyYWdlX3Rhc2tfaWQiOjIwMDA4LCJ0YXNrX2lkIjoyMDAwOCwiZW5jb3VyYWdlX3Jlc291cmNlX2lkIjoiZWFyblBhZ2VfdGFza0xpc3RfMyIsImV2ZW50VHJhY2tpbmdMb2dJbmZvIjpbeyJkZWxpdmVyT3JkZXJJZCI6IjQzNyIsIm1hdGVyaWFsS2V5IjoiVEFTS19MSVNUXzIwMDA4X0RJU0hfU1VCU0lEWV9BVkFJTEFCTEUiLCJldmVudFRyYWNraW5nVGFza0lkIjoyMDAwOCwicmVzb3VyY2VJZCI6ImVhcm5QYWdlX3Rhc2tMaXN0XzMiLCJleHRQYXJhbXMiOnsiaXNTZXJ2ZXJSZWNvcmRDbGlja0FjdGlvbiI6dHJ1ZX19XX1d",
             "Accept-Encoding": "gzip, deflate",
             "Accept-Language": "zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7",
             "Cookie": token
