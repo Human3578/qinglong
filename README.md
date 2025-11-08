@@ -48,6 +48,8 @@
 |饭补|https://encourage.kuaishou.com/rest/wd/encourage/unionTask/dish/report|
 |步数换金币（失效了）|https://encourage.kuaishou.com/rest/wd/encourage/unionTask/walking/detail|
 |签到|https://nebula.kuaishou.com/rest/wd/encourage/unionTask/signIn/report|
+普通快手
+
 
 ``` python
 def main():
@@ -65,9 +67,6 @@ if __name__ == '__main__':
 
 <h6>个人制作 并不能保证完美运行</h6>
 
-
-
-###### [电报 @I_love_xxt](https://t.me/I_love_xxt)
 
 
 
