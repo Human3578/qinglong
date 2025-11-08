@@ -49,7 +49,9 @@
 |步数换金币（失效了）|https://encourage.kuaishou.com/rest/wd/encourage/unionTask/walking/detail|
 |签到|https://nebula.kuaishou.com/rest/wd/encourage/unionTask/signIn/report|
 普通快手|https://encourage.kuaishou.com/rest/wd/encourage/unionTask/treasureBox/report?__NS_sig3=
+https://encourage.kuaishou.com/rest/wd/encourage/unionTask/dish/report?__NS_sig4=
 
+https://encourage.kuaishou.com/rest/wd/encourage/unionTask/signIn/report?__NS_sig3=
 
 ``` python
 def main():
