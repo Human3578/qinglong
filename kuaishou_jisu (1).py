@@ -28,8 +28,8 @@ def get_baoxiang(token, __NS_sig3):
             "User-Agent": "Mozilla/5.0 (Linux; Android 14; 23113RKC6C Build/UKQ1.230804.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/90.0.4430.226 KsWebView/1.8.90.675 (rel) Mobile Safari/537.36 Yoda/3.1.7-alpha33-intercept1 ksNebula/12.5.20.8014 OS_PRO_BIT/64 MAX_PHY_MEM/15199 AZPREFIX/az4 ICFO/0 StatusHT/34 TitleHT/43 NetType/WIFI ISLP/0 ISDM/0 ISLB/0 locale/zh-cn DPS/19.822 DPP/99 CT/0 ISLM/0",
             "content-type": "application/json",
             "Accept": "*/*",
-            "Origin": "https://nebula.kuaishou.com",
-            "X-Requested-With": "com.kuaishou.nebula",
+            "Origin": "https://encourage.kuaishou.com",
+            "X-Requested-With": "com.smile.gifmaker",
             "Sec-Fetch-Site": "same-origin",
             "Sec-Fetch-Mode": "cors",
             "Sec-Fetch-Dest": "empty",
@@ -66,7 +66,7 @@ def get_fanbu(token, __NS_sig4):
             "content-type": "application/json",
             "Accept": "*/*",
             "Origin": "https://encourage.kuaishou.com",
-            "X-Requested-With": "com.kuaishou.nebula",
+            "X-Requested-With": "com.smile.gifmaker",
             "Sec-Fetch-Site": "same-origin",
             "Sec-Fetch-Mode": "cors",
             "Sec-Fetch-Dest": "empty",
@@ -268,10 +268,10 @@ def gen_sig(params,data):
 
 
 def main():
-    get_baoxiang(_cookie, "b8a8efdfef4d7b1274e497e7e0e11fff8a39fcda6a006afa0371f7f7f1f1f2f3ccec")
-    get_fanbu(_cookie, "HUDR_sFnX-HFuAE5VsdPNKlLOPr4ntwVLcugxjxZz8_z61EHYFY07AGiHwMelb_ny_pMHxR_0BjgEKKQba1Uc3eSWmMYZtd0w8l4XDj-3MCjD__Ta_XvZSJ4TCB8KqqVKMgRgdptyHjC4q5WxhjlivWeuIEH73Q5s2-4u88UkwHrtgNYFpaoTLyzpjhJN-kWm8EpIT1cd-4gSarv9lyc5NYynpqIeL1p8oDC_aNVs06EqrteEDO9WQN6bPOljEgPJOUyOx2TUE6Zol22dloUXNTFoJdgLPRKfw_RHi0rq1S59Nig74-a-EOa9v636jauSe37plaPbVfAlQYO9ZR3FHGMRsQPwfpaekre0Ra5-k8MxO_S1KZimvzg8hzW00xtV2ElWK4bOQ_Jr8MgnbnxspIGrdAT7goeqm_Gr_PeS3rmTNMpgPIhHO1YIzTyVqRydZeTwh5ckgKW0moc1WndwyJqoqIh222uMxhDr_q2L_eyoTgyZuswrq7MqaDmbuEH0je0NPMrtCfeKHFlC$HE_4b541fe2ab824ca5f9900144007cc023e901070200376400000015d87fe69450a5f990019b563eda7b563e0a00")
+    get_baoxiang(_cookie, "sig3")
+    get_fanbu(_cookie, "sig4")
     get_walk(_cookie, "HUDR_sFnX-HFuAE5VsdPNKlLOPr4ntwVLcugxjxZz8_z61EHYFY07AGiHwMelb_ny_pMHxR_0BjgEKKQba1Uc3eSWmMYZtd0w8l4XDj-3MCjD__Ta_XvZSJ4TCB8KqqVKMgRgdptyHjC4q5WxkzlivWeuMEH73Q5s2-4u88UkwHrtgNYFpaoTLyzpjhJN-kWm8EpIT1cd-4gSarv9lyc5NYynpqIeL1p8oDC_aNVs06E48ZDBDPBAVd7Wcf92VBvKKxaMh3mQAe1nhm7Hio9fdjZvaMcUc1SdzvMQzAj21S59Nig74-a-EOa976Kn3PySfizrwKPeBfIvE4O9ZB3FHGMRsAPwfpaekre0Ra5-P8MxO_S1KZimvzg8hzW00xtV2EkPPYyfHfQ455BmZ2JctZayZle8i-X-z6H4p6yd16GOasouctNda1Yaxj6PrwadZeTwh5ckgKW0moc1WndwyJqoqIh222uMxhDr_q2L_eyoTgrL6MkureEraDmbuEH0je0NPMrtCfeKHFlC$HE_4b541fe2aba7096f7b9001c139646fdfa9010702003764000000408e77b2c51b6f7b90019b563eda7b563e2600")
-    get_qiandao(_cookie, "1b0b4c7c5896f2b1d7472e444342544b54a7d200e7a3c959ee6e5454525251506f4f")
+    get_qiandao(_cookie, "sig3")
     get_money(_cookie)
     
 if __name__ == '__main__':
