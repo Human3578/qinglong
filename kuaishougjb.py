@@ -136,11 +136,11 @@ def get_walk(token, __NS_sig4):
             "content-type": "application/json",
             "Accept": "*/*",
             "Origin": "https://encourage.kuaishou.com",
-            "X-Requested-With": "com.kuaishou.nebula",
+            "X-Requested-With": "com.smile.gifmaker",
             "Sec-Fetch-Site": "same-origin",
             "Sec-Fetch-Mode": "cors",
             "Sec-Fetch-Dest": "empty",
-            "Referer": "https://encourage.kuaishou.com/activity/walk?layoutType=4&source=new_task_center&encourageEventTracking=W3siZW5jb3VyYWdlX3Rhc2tfaWQiOjIwMDQ4LCJlbmNvdXJhZ2VfcmVzb3VyY2VfaWQiOiJlYXJuUGFnZV90YXNrTGlzdF8yMiIsImV2ZW50VHJhY2tpbmdMb2dJbmZvIjpbeyJldmVudFRyYWNraW5nVGFza0lkIjoyMDA0OCwicmVzb3VyY2VJZCI6ImVhcm5QYWdlX3Rhc2tMaXN0XzIyIiwiZXh0UGFyYW1zIjp7fX1dfV0",
+            "Referer": "https://encourage.kuaishou.com/activity/walk?layoutType=4&source=new_task_center&encourageTaskValidityTrack=eyJhY3Rpdml0eV9pZCI6MjAwNDgsInJlc291cmNlX2lkIjoiZWFyblBhZ2VfdGFza0xpc3RfNiIsImV4dF9wYXJhbXMiOnsiaXNTZXJ2ZXJSZWNvcmRDbGlja0FjdGlvbiI6dHJ1ZX19&encourageEventTracking=W3siZW5jb3VyYWdlX3Rhc2tfaWQiOjIwMDQ4LCJ0YXNrX2lkIjoyMDA0OCwiZW5jb3VyYWdlX3Jlc291cmNlX2lkIjoiZWFyblBhZ2VfdGFza0xpc3RfNiIsImV2ZW50VHJhY2tpbmdMb2dJbmZvIjpbeyJkZWxpdmVyT3JkZXJJZCI6IjM5MiIsIm1hdGVyaWFsS2V5IjoiVEFTS19MSVNUXzIwMDQ4X1dBTEtJTkdfTk9UX1JFV0FSREVEIiwiZXZlbnRUcmFja2luZ1Rhc2tJZCI6MjAwNDgsInJlc291cmNlSWQiOiJlYXJuUGFnZV90YXNrTGlzdF82IiwiZXh0UGFyYW1zIjp7ImlzU2VydmVyUmVjb3JkQ2xpY2tBY3Rpb24iOnRydWV9fV19XQ",
             "Accept-Encoding": "gzip, deflate",
             "Accept-Language": "zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7",
             "Cookie": token
@@ -166,7 +166,7 @@ def get_walk(token, __NS_sig4):
                 title = resp_json['data']['button']['text']
                 print(f"可以领取:  {title}")
 
-                url = "https://encourage.kuaishou.com/rest/wd/encourage/unionTask/reward?taskId=20048&rewardType=1&__NS_sig4=" + __NS_sig4 + "&sigCatVer=1"
+                url = "https://encourage.kuaishou.com/rest/wd/encourage/unionTask/reward?taskId=20048&rewardType=1&source=WALK_1&__NS_sig4=" + __NS_sig4 + "&sigCatVer=1"
                 headers = {
                     "Host": "encourage.kuaishou.com",
                     "Connection": "keep-alive",
@@ -174,11 +174,11 @@ def get_walk(token, __NS_sig4):
                     "content-type": "application/json",
                     "Accept": "*/*",
                     "Origin": "https://encourage.kuaishou.com",
-                    "X-Requested-With": "com.kuaishou.nebula",
+                    "X-Requested-With": "com.smile.gifmaker",
                     "Sec-Fetch-Site": "same-origin",
                     "Sec-Fetch-Mode": "cors",
                     "Sec-Fetch-Dest": "empty",
-                    "Referer": "https://encourage.kuaishou.com/activity/dish?layoutType=4&encourageEventTracking=W3siZW5jb3VyYWdlX3Rhc2tfaWQiOjIwMDA4LCJlbmNvdXJhZ2VfcmVzb3VyY2VfaWQiOiJlYXJuUGFnZV90YXNrTGlzdF8xNyIsImV2ZW50VHJhY2tpbmdMb2dJbmZvIjpbeyJldmVudFRyYWNraW5nVGFza0lkIjoyMDAwOCwicmVzb3VyY2VJZCI6ImVhcm5QYWdlX3Rhc2tMaXN0XzE3IiwiZXh0UGFyYW1zIjp7fX1dfV0",
+                    "Referer": "https://encourage.kuaishou.com/activity/walk?layoutType=4&source=new_task_center&encourageTaskValidityTrack=eyJhY3Rpdml0eV9pZCI6MjAwNDgsInJlc291cmNlX2lkIjoiZWFyblBhZ2VfdGFza0xpc3RfNiIsImV4dF9wYXJhbXMiOnsiaXNTZXJ2ZXJSZWNvcmRDbGlja0FjdGlvbiI6dHJ1ZX19&encourageEventTracking=W3siZW5jb3VyYWdlX3Rhc2tfaWQiOjIwMDQ4LCJ0YXNrX2lkIjoyMDA0OCwiZW5jb3VyYWdlX3Jlc291cmNlX2lkIjoiZWFyblBhZ2VfdGFza0xpc3RfNiIsImV2ZW50VHJhY2tpbmdMb2dJbmZvIjpbeyJkZWxpdmVyT3JkZXJJZCI6IjM5MiIsIm1hdGVyaWFsS2V5IjoiVEFTS19MSVNUXzIwMDQ4X1dBTEtJTkdfTk9UX1JFV0FSREVEIiwiZXZlbnRUcmFja2luZ1Rhc2tJZCI6MjAwNDgsInJlc291cmNlSWQiOiJlYXJuUGFnZV90YXNrTGlzdF82IiwiZXh0UGFyYW1zIjp7ImlzU2VydmVyUmVjb3JkQ2xpY2tBY3Rpb24iOnRydWV9fV19XQ",
                     "Accept-Encoding": "gzip, deflate",
                     "Accept-Language": "zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7",
                     "Cookie": token
@@ -270,7 +270,7 @@ def gen_sig(params,data):
 def main():
     get_baoxiang(_cookie, "sig3")
     get_fanbu(_cookie, "sig4")
-    get_walk(_cookie, "HUDR_sFnX-HFuAE5VsdPNKlLOPr4ntwVLcugxjxZz8_z61EHYFY07AGiHwMelb_ny_pMHxR_0BjgEKKQba1Uc3eSWmMYZtd0w8l4XDj-3MCjD__Ta_XvZSJ4TCB8KqqVKMgRgdptyHjC4q5WxkzlivWeuMEH73Q5s2-4u88UkwHrtgNYFpaoTLyzpjhJN-kWm8EpIT1cd-4gSarv9lyc5NYynpqIeL1p8oDC_aNVs06E48ZDBDPBAVd7Wcf92VBvKKxaMh3mQAe1nhm7Hio9fdjZvaMcUc1SdzvMQzAj21S59Nig74-a-EOa976Kn3PySfizrwKPeBfIvE4O9ZB3FHGMRsAPwfpaekre0Ra5-P8MxO_S1KZimvzg8hzW00xtV2EkPPYyfHfQ455BmZ2JctZayZle8i-X-z6H4p6yd16GOasouctNda1Yaxj6PrwadZeTwh5ckgKW0moc1WndwyJqoqIh222uMxhDr_q2L_eyoTgrL6MkureEraDmbuEH0je0NPMrtCfeKHFlC$HE_4b541fe2aba7096f7b9001c139646fdfa9010702003764000000408e77b2c51b6f7b90019b563eda7b563e2600")
+    get_walk(_cookie, "sig4")
     get_qiandao(_cookie, "sig3")
     get_money(_cookie)
     
